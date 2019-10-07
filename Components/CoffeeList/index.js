@@ -17,7 +17,15 @@ const CoffeeList = () => {
   }
   return (
     <Content>
-      <List>{shops}</List>
+      <List
+        onPress={() =>
+          props.navigation.navigate("CoffeeDetailScreen", {
+            CoffeeID: oneItem.id
+          })
+        }
+      >
+        {shops}
+      </List>
     </Content>
   );
 };
