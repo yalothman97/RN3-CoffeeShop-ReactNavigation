@@ -20,7 +20,7 @@ const CoffeeList = () => {
       <List
         onPress={() =>
           props.navigation.navigate("CoffeeDetailScreen", {
-            CoffeeID: oneItem.id
+            CafeID: cafe.id
           })
         }
       >

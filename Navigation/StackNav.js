@@ -13,7 +13,16 @@ const StackNav = createStackNavigator(
     LoginScreen: Login
   },
   {
-    initialRouteName: "LoginScreen"
+    initialRouteName: "LoginScreen",
+    defaultNavigationOptions: {
+      headerTintColor: "white",
+      headerStyle: {
+        backgroundColor: "rgb(20, 90, 100)"
+      },
+      headerTitleStyle: {
+        fontWeight: "bold"
+      }
+    }
   }
 );
 

@@ -52,14 +52,14 @@ const Login = props => {
         <Button
           full
           success
-          onPress={() => props.navigation.navigate("CoffeeListScreen")}
+          onPress={() => props.navigation.replace("CoffeeListScreen")}
         >
           <Text>Login</Text>
         </Button>
         <Button
           full
           warning
-          onPress={() => props.navigation.navigate("CoffeeListScreen")}
+          onPress={() => props.navigation.replace("CoffeeListScreen")}
         >
           <Text>Register</Text>
         </Button>
