@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { observer } from "mobx-react";
 
 // NativeBase Components
-import { List, Content } from "native-base";
+import { List, Content, Button, Icon } from "native-base";
 
 //Components
 import CoffeeItem from "./CoffeeItem";
@@ -17,17 +17,21 @@ const CoffeeList = () => {
   }
   return (
     <Content>
-      <List
-        onPress={() =>
-          props.navigation.navigate("CoffeeDetailScreen", {
-            CafeID: cafe.id
-          })
-        }
-      >
-        {shops}
-      </List>
+      <List>{shops}</List>
     </Content>
   );
 };
+
+CoffeeList.navigationOptions = ({ navigation }) => ({
+  title: "Coffee List",
+  headerLeft: null,
+  headerRight: (
+    <Icon
+      onPress={() => navigation.navigate("CoffeeCartScreen")}
+      type="FontAwesome"
+      name="shopping-cart"
+    />
+  )
+});
 
 export default observer(CoffeeList);

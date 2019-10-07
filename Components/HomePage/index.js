@@ -11,13 +11,7 @@ import styles from "./styles";
 import AppContainer from "../../Navigation";
 
 const HomePage = () => {
-  return (
-    <Container style={styles.transparent}>
-      <View style={styles.overlay} />
-      <Header style={styles.transparent} />
-      <AppContainer />
-    </Container>
-  );
+  return <AppContainer />;
 };
 
 export default HomePage;

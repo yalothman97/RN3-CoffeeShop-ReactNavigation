@@ -95,4 +95,11 @@ class CoffeeDetail extends Component {
   }
 }
 
-export default observer(CoffeeDetail);
+CoffeeDetail.navigationOptions = ({ navigation }) => {
+  const shopID = navigation.getParam("shopID");
+  return {
+    title: cafes.find(cafe => cafe.id === shopID).name
+  };
+};
+
+export default CoffeeDetail;

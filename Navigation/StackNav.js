@@ -21,7 +21,8 @@ const StackNav = createStackNavigator(
       },
       headerTitleStyle: {
         fontWeight: "bold"
-      }
+      },
+      cardStyle: { backgroundColor: "rgb(20, 90, 100)" }
     }
   }
 );
