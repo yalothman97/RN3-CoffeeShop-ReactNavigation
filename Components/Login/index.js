@@ -24,7 +24,7 @@ const Login = props => {
           <Body>
             <Form>
               <Body>
-                <Label style={{ color: "white" }}>Username</Label>
+                <Label style={{ color: "black" }}>Username</Label>
               </Body>
               <Item
                 rounded
@@ -37,7 +37,7 @@ const Login = props => {
                 <Input autoCorrect={false} autoCapitalize="none" />
               </Item>
               <Body>
-                <Label style={{ color: "white" }}>Password</Label>
+                <Label style={{ color: "black" }}>Password</Label>
               </Body>
               <Item rounded style={{ backgroundColor: "white", marginTop: 10 }}>
                 <Input
